@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: fullstack-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: fullstack-app
+  ports:
+    - name: frontend
+      port: 80
+      targetPort: 5173 # Expose frontend on port 80
+    - name: backend
+      port: 3000
+      targetPort: 3000 # Expose backend directly on port 3000

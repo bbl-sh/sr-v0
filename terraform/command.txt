@@ -1,0 +1,5 @@
+chmod +x deploy-terraform.sh
+./deploy-terraform.sh init
+./deploy-terraform.sh plan
+./deploy-terraform.sh apply
+./deploy-terraform.sh destroy
