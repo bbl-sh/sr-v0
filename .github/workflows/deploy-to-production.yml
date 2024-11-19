@@ -1,0 +1,23 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build Docker image
+        run: docker build -t my-app:latest .
+
+      - name: Push Docker image to registry
+        run: docker push my-registry/my-app:latest
+
+      - name: Deploy to production
+        run: ./deploy.sh # Custom deployment script
