@@ -1,4 +1,3 @@
-```markdown
 # Sarkari Result Clone
 
 A **Sarkari Result Clone** web application that provides updates on government job notifications, admit cards, and exam results. Built with a **Svelte** frontend and a **Hono.js** backend, this project is containerized using **Docker** and deployable on **Kubernetes**.
@@ -43,7 +42,6 @@ A **Sarkari Result Clone** web application that provides updates on government j
    ```bash
    git clone git@github-bbl-sh:bbl-sh/sarkari-result-clone.git
    cd sarkari-result-clone
-   ```
 
 2. **Install Dependencies**:
    - Frontend:
